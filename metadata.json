@@ -1,0 +1,6 @@
+{
+  "name": "BiomedServe",
+  "description": "A comprehensive maintenance app for biomedical engineers to manage service images, notes, and IC pin descriptions with offline search capabilities.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": []
+}

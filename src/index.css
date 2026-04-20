@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-primary: #3b82f6;
+  --color-surface: #1a1d24;
+  --color-canvas: #0f1115;
+  --color-border-card: #2d3748;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-canvas text-gray-100;
+  overscroll-behavior-y: contain;
+  -webkit-tap-highlight-color: transparent;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.bento-card {
+  @apply bg-surface border border-border-card rounded-2xl p-5 transition-all duration-300;
+}
+
+.bento-card:hover {
+  @apply border-primary;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+input[type="range"] {
+  @apply cursor-pointer;
+}
+
+.prose pre {
+  @apply bg-canvas rounded-lg p-3 overflow-x-auto text-[10px];
+}
+
+.prose code {
+  @apply bg-canvas px-1 rounded text-primary;
+}
+
+.ic-pin-tag {
+  @apply flex items-center justify-between px-2 py-1 bg-canvas border border-border-card rounded-md text-[10px] uppercase font-mono;
+}
