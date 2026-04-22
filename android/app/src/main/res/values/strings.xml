@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">BiomedServe</string>
+    <string name="title_activity_main">BiomedServe</string>
+    <string name="package_name">com.biomedserve.app</string>
+    <string name="custom_url_scheme">com.biomedserve.app</string>
+</resources>
